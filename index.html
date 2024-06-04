@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-links">
+      <div class="header">
+        <h1><a href="#Home">Yoressu</a></h1>
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="awal" id="Home">
+      <h1>Tentang <span style="color: red">Gue</span></h1>
+      <div class="text-awal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
+          repellat amet laborum, in quod impedit delectus illum possimus ipsa
+          pariatur ducimus esse optio dolores perspiciatis nostrum suscipit
+          praesentium magni?
+        </p>
+      </div>
+    </div>
+    <main class="content" id="Content">
+      <div class="isi-konten">
+        <div class="img-left">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/491996ac-a7e5-421a-824d-e940f53a17ac/df4qaqg-cb21bbf4-ee2c-4323-acba-daa65e8ad766.png/v1/fill/w_1280,h_1707,q_80,strp/yor_forger_fan_art__by_fonso16_df4qaqg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcLzQ5MTk5NmFjLWE3ZTUtNDIxYS04MjRkLWU5NDBmNTNhMTdhY1wvZGY0cWFxZy1jYjIxYmJmNC1lZTJjLTQzMjMtYWNiYS1kYWE2NWU4YWQ3NjYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.y3Lofg4c9fO_78JJAb2tga9D_iVNT2baINXgIdSaKrI"
+            alt=""
+          />
+        </div>
+        <div class="text-right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
+            impedit cumque explicabo placeat libero expedita perspiciatis quod
+            commodi quos vero ullam atque tempora voluptas quis ducimus saepe
+            iusto voluptatem enim!
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="container" id="Service">
+      <div class="services">
+        <h1>All Services</h1>
+      </div>
+      <div class="logo-web">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x61Cw4Q8ZRPkTMTwwuBhJoBEIi36LzOknw&s"
+          alt=" Logo image"
+        />
+        <div class="text-image">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consectetur rem cum molestias laborum eveniet unde? Sit, nostrum
+            eos? Ipsa accusamus perspiciatis molestias. Officia reprehenderit
+            molestias alias tempora sequi facere rerum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-header">
+        <h1> About Us</h1>
+      </div>
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          voluptates excepturi error ab id impedit soluta, sunt, corrupti
+          repudiandae quia dolore quae accusamus voluptas alias suscipit et
+          aliquam praesentium dolores.
+        </p>
+      </div>
+      <div class="image-about">
+        <h1> Berikut Gambar Random</h1>
+        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg">
+        <img src="https://w0.peakpx.com/wallpaper/1021/487/HD-wallpaper-technology-code-programming-programmer.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQCtHJIjerC9N6IcsJ-iZKN4QyiKEgFybcw&s">
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("main").classList.add("show");
+      });
+      function handleScroll() {
+        const aboutUs = document.getElementById("Content");
+        const scrollPosition = window.scrollY;
+        const aboutUsPosition = aboutUs.offsetTop;
+
+        if (scrollPosition > aboutUsPosition - window.innerHeight / 2) {
+          aboutUs.classList.add("show");
+        } else {
+          aboutUs.classList.remove("show");
+        }
+      }
+      window.addEventListener("scroll", handleScroll);
+      
+    </script>
+  </body>
+</html>
